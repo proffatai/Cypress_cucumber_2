@@ -1,48 +1,56 @@
 import {Given, When, And, Then} from 'cypress-cucumber-preprocessor/steps'
 /// <reference types ="cypress">
 
+import {POM} from './POM'
+
+let website = '/'
+let username ="Admin"
+let password = "admin123"
+let wrong_username ="Adminds"
+let wrong_password = "admisdn123"
+
+const object = new POM ();
+
 Given('User must be able to successfully land on the homepage', ()=>{
 
-    cy.visit('/')
-    cy.url().should('equal','https://opensource-demo.orangehrmlive.com/index.php/auth/login/')
+    object.navigate(website) 
 })
 
 
 When('User enters correct username', ()=>{
 
-    cy.get('#txtUsername').type('Admin')
+    object.Enterusername(username)
 })
 
 And('User enters correct password', ()=>{
 
-    cy.get('#txtPassword').type('admin123')
+    object.Enterpassword(password)
 })
 And('User clicks the login button', ()=>{
 
-    cy.get('#btnLogin').click()
+    object.subMit()
 })
 
 Then("User should be taken to the dashboard", ()=>{
    
-    cy.get('h1').should('contain','Dashboard')
+    object.verification()
 })
 
 
 Given('User must be able to successfully land on the homepage', ()=>{
 
-    cy.visit('/')
-    cy.url().should('equal','https://opensource-demo.orangehrmlive.com/index.php/auth/login/')
+    object.navigate(website) 
 })
 
 
 When('User enters incorrect username', ()=>{
 
-    cy.get('#txtUsername').type('Addmin')
+    cy.get('#txtUsername').type(wrong_username)
 })
 
 And('User enters incorrect password', ()=>{
 
-    cy.get('#txtPassword').type('admind123')
+    cy.get('#txtPassword').type(wrong_password)
 })
 And('User clicks the login button', ()=>{
 
