@@ -38,3 +38,9 @@ Repeat same procedure for other Gharkin keywords such as And, Then, When
 Gherkin Indent
 Cucumber(Gherkin) Full Support
 Snippets and Syntax Highlight for Gherkin (Cucumber)
+
+## How to execute a specific scenario in a feature file
+
+Type the keyword, @focus just above that scenario in the feature file that you want to run.
+
+Say we have over 5 scenarios in a feature file and we just want to run 3 of them, the we can include the @focus keyword just above those scenarios too
