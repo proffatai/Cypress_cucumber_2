@@ -1,0 +1,133 @@
+[
+  {
+    "description": "    As a user, I should be able to use all the functions in the practice page",
+    "keyword": "Feature",
+    "name": "Login functionality test",
+    "line": 1,
+    "id": "login-functionality-test",
+    "tags": [],
+    "uri": "1st_BDD.feature",
+    "elements": [
+      {
+        "id": "login-functionality-test;i-should-be-able-to-see-the-title-of-the-page",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "I should be able to see the title of the page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User must be able to successfully land on the homepage",
+            "result": {
+              "status": "passed",
+              "duration": 5202000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User enters correct username",
+            "result": {
+              "status": "passed",
+              "duration": 291000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User enters correct password",
+            "result": {
+              "status": "passed",
+              "duration": 325000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User clicks the login button",
+            "result": {
+              "status": "passed",
+              "duration": 5341000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "User should be taken to the dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 64000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-functionality-test;i-should-not-be-able-to-access-the-homepage",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "I should not be able to access the homepage",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User must be able to successfully land on the homepage",
+            "result": {
+              "status": "passed",
+              "duration": 1620000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User enters incorrect username",
+            "result": {
+              "status": "passed",
+              "duration": 313000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User enters incorrect password",
+            "result": {
+              "status": "passed",
+              "duration": 299000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User clicks the login button",
+            "result": {
+              "status": "passed",
+              "duration": 2273000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "User should not be taken to the dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

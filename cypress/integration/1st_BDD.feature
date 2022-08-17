@@ -1,8 +1,7 @@
 Feature: Login functionality test
 
     As a user, I should be able to use all the functions in the practice page
-
-    @focus
+ 
     Scenario: I should be able to see the title of the page
   Given User must be able to successfully land on the homepage
    When User enters correct username
